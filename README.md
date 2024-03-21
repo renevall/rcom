@@ -24,9 +24,9 @@ There will be a service package in charge of dealing with the use case at hand, 
 
 The expectation is to be able to run the following commands to send notifications over the desired channels:
 
-- rcom send -t foo@bar.com -m your account was just approved! -c email
-- rcom send -t 505-9045845 -m someone is waiting for you in the lobby -c sms
-- rcom send -t c3245/databases -m your database is over 80% -c slack
+- `rcom send -t foo@bar.com -m "your account was just approved!" -c email`
+- `rcom send -t 505-9045845 -m "someone is waiting for you in the lobby" -c sms`
+- `rcom send -t c3245/databases -m "your database is over 80%" -c slack`
 
 ### Commentary
 
@@ -60,8 +60,8 @@ For the test, we show the effect concurrency can have on performance. However, i
 
 The CLI could be run by:
 
-- rcom blacklist # sequencial
-- rcom blacklist -m concurrent
+- `rcom blacklist # sequencial`
+- `rcom blacklist -m concurrent`
 
 ### Commentary
 
@@ -99,6 +99,6 @@ For this last test I solved the common code challenge "find the max sum values o
 
 The CLI could be run by:
 
-- rcom max # defaults
-- rcom max -k 4 "34,22,56,1,32,12,1,22,7"
-# rcom
+- `rcom max # defaults`
+- `rcom max -k 4 "34,22,56,1,32,12,1,22,7"`
+
